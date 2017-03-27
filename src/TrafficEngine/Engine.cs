@@ -1,4 +1,6 @@
-﻿using System.Threading;
+﻿using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace TrafficEngine
 {
@@ -11,8 +13,10 @@ namespace TrafficEngine
         private static int _interval;
         private static int _maximumNumberOfFlights;
 
+        private static readonly List<Task> Flights = new List<Task>();
+
         /// <summary>
-        /// Starts the traffic generation engine.
+        ///     Starts the traffic generation engine.
         /// </summary>
         /// <param name="maximumNumberOfFlights">The maximum number of flights.</param>
         /// <param name="interval">The interval in which to generate a new flight in milliseconds.</param>
@@ -23,18 +27,12 @@ namespace TrafficEngine
 
             var timer = new Timer(x =>
             {
-                GenerateFlight();
-
+                if(Flights.Count <= _maximumNumberOfFlights)
+                    Flights.Add(Task.Run(() => { Flight.Initialize(); }));
+                
             }, null, 0, _interval);
-        }
-
-        /// <summary>
-        /// Generates the flight.
-        /// </summary>
-        /// TODO Edit XML Comment Template for GenerateFlight
-        private static void GenerateFlight()
-        {
             
+            Task.WaitAll(Flights.ToArray());
         }
     }
 }

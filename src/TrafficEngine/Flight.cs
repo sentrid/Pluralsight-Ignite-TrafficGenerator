@@ -5,11 +5,12 @@ namespace TrafficEngine
     public class Flight
     {
         private static readonly AutoResetEvent AutoResetEvent = new AutoResetEvent(false);
-        private static FlightInformation _flightInformation;
+
+        public static FlightInformation FlightInformation { get; private set; }
 
         public static void Initialize()
         {
-            _flightInformation = AssembleFlightInfo();
+            FlightInformation = AssembleFlightInfo();
             AutoResetEvent.WaitOne();
         }
 
