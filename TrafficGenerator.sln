@@ -14,6 +14,10 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TrafficGenerator", "src\Tra
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TrafficEngine", "src\TrafficEngine\TrafficEngine.xproj", "{72426ECF-DFB0-455F-8738-4154A897C869}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TrafficClr", "src\TrafficClr\TrafficClr.xproj", "{1BE7586B-8680-4C5F-AEFD-76165DF80045}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TrafficService", "src\TrafficService\TrafficService.xproj", "{5B58FAD7-A79C-42F0-8642-62750CEEEA01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,12 +32,20 @@ Global
 		{72426ECF-DFB0-455F-8738-4154A897C869}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72426ECF-DFB0-455F-8738-4154A897C869}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72426ECF-DFB0-455F-8738-4154A897C869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BE7586B-8680-4C5F-AEFD-76165DF80045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BE7586B-8680-4C5F-AEFD-76165DF80045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BE7586B-8680-4C5F-AEFD-76165DF80045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BE7586B-8680-4C5F-AEFD-76165DF80045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B58FAD7-A79C-42F0-8642-62750CEEEA01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B58FAD7-A79C-42F0-8642-62750CEEEA01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B58FAD7-A79C-42F0-8642-62750CEEEA01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B58FAD7-A79C-42F0-8642-62750CEEEA01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{471DA339-3688-4E3E-BAA5-DCCCD25141CD} = {98DEF340-4C88-4E2D-9618-A0FBC938F6FE}
-		{72426ECF-DFB0-455F-8738-4154A897C869} = {98DEF340-4C88-4E2D-9618-A0FBC938F6FE}
+		{5B58FAD7-A79C-42F0-8642-62750CEEEA01} = {98DEF340-4C88-4E2D-9618-A0FBC938F6FE}
 	EndGlobalSection
 EndGlobal

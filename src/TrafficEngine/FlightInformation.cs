@@ -24,7 +24,7 @@ namespace TrafficEngine
 
         public DateTime TimeOffGround { get; set; }
 
-        public DateTime CurrentTimeEnroute { get; set; }
+        public TimeSpan CurrentTimeEnroute { get; set; }
 
         public int FuelOnBoard { get; set; }
     }

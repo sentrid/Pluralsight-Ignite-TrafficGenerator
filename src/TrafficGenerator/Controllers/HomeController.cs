@@ -13,6 +13,11 @@ namespace TrafficGenerator.Controllers
             return View();
         }
 
+        public IActionResult Console()
+        {
+            return null;
+        }
+
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
